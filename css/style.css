@@ -1,0 +1,80 @@
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+body{
+    font-family:sans-serif;
+    background-color: rgb(18,18,18);
+}
+
+h1,h2,h3,h4{
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+.smaller{
+    font-size:50%;
+}
+.jumbotron{
+    margin:0;
+    padding:2px;
+    background-color: black;
+    color:white;
+    border-radius:0;
+}
+
+.jumbotron h1,.jumbotron h5{
+    color:orangered;
+    font-weight:700;
+}
+
+.navbar-nav> li> a:hover{
+    color:red;
+}
+
+/* content */
+.placeholder{
+    margin:auto;
+    width:100%;
+    background-color:rgb(23, 23, 23);
+}
+.carousel-item img{
+    border-radius:25px;
+}
+.carousel-caption{
+    background-color: rgba(0,0,0,0.5);
+}
+.carousel-indicators li{
+    height: 1rem;
+    width:1rem;
+    border-radius:100%;
+}
+
+footer{
+    background-color: black;
+}
+
+
+
+
+
+/* footer */
+
+footer h5{
+    color:orangered;
+}
+
+footer .fa-envelope{
+    color:white;
+}
+
+footer li a{
+    color:whitesmoke;
+}
+.twitch{
+    color:#6441a5;
+}
+.twitch:hover{
+    opacity:0;
+}
+footer li a:hover{
+    color:yellow;
+    text-decoration: none;
+}
