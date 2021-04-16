@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS and external stylesheets -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet"href="node_modules/bootstrap/dist/css/bootstrap.min.css"    />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-    <!-- local stylesheet and google fonts -->
     <link rel="stylesheet" href="/css/style.css" />
+    <!-- endbuild -->
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -53,7 +55,7 @@
         <div class="collapse navbar-collapse text-nowrap" id="ashesNavbar">
             <ul class="navbar-nav col justify-content-end">
               <li class="nav-item ml-5 active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
-              <li class="nav-item ml-5"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+              <li class="nav-item ml-5"><a class="nav-link" href=""><i class="fa fa-info fa-lg"></i> About</a></li>
               <li class="nav-item ml-5"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Class Resources</a></li>
               <li class="nav-item ml-5"><a class="nav-link" href="mailto:fromasheskj@gmail.com"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
             </ul>
@@ -62,23 +64,22 @@
     </nav>
     
     <!-- content goes here -->
-    
-    <div class="temp"></div>
-    <div class="temp"></div>
-
+   <div class="container">
+     
+   </div>
     <!-- content ends here -->
     
     
     
     
-    <footer>
-      <div class="container">
+    <footer class="site-footer">
+      <div class="container pt-4">
         <div class="row">
           <div class="col-4 d-none d-sm-block col-sm-2 offset-1">
             <h5>Links</h5>
             <ul class="list-unstyled">
               <li><a href="#">Home</a></li>
-              <li><a href="aboutus.html">About</a></li>
+              <li><a href="">About</a></li>
               <li><a href="#">Sites</a></li>
               <li><a href="">Contact</a></li>
             </ul>
@@ -93,14 +94,18 @@
             </div>
           <div class="col-sm-4 text-center">
             <h5>Email us</h5>
-            <a role="button" class="email btn btn-link" href="mailto:fromasheskj@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
+            <a role="button" class="email btn btn-link" href="mailto:fromasheskj@gmail.com"><i class="fa fa-envelope fa-3x"></i></a>
           </div>
         </div>
       </div>
     </footer>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- endbuild -->
+  
   </body>
 </html>
