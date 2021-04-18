@@ -62,23 +62,14 @@ h1 {
 .row-content {
   background: #2e2e2e; }
 
-#homeCarousel img{
-  padding: 0;
-  margin:0;
-  object-fit: contain cover;
-}
-#homeCarousel .carousel-caption {
-  }
+.carousel-caption {
+  position: relative;
+  left: 0;
+  top: 0; }
 
-#homeCarousel .carousel-inner {
-  border-radius: 25px; 
-  
-}
+.carousel-inner {
+  border-radius: 25px; }
 
-#homeCarousel {
-  background: none;
-border: none;
-width:90%;}
 .placeholder {
   margin: auto;
   width: 100%;
@@ -93,7 +84,6 @@ width:90%;}
   background-color: rgba(0, 0, 0, 0.5); }
 
 .carousel-indicators li {
-  position:relative;
   height: 1rem;
   width: 1rem;
   border-radius: 100%; }
@@ -141,7 +131,7 @@ footer h5 {
     #gallery img {
       height: 15vw; } }
 
-#gallery .carousel-item img {
+.carousel-item img {
   height: 50vw;
   object-fit: contain; }
   @media (min-width: 992px) {

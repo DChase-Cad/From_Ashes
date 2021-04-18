@@ -14,7 +14,7 @@ $purple:#6441a5;
     img {
       display: block;
       margin: 15px 0;
-      border-radius: 25px;
+      
     }
     *:hover{
       cursor: pointer;
@@ -144,7 +144,9 @@ $purple:#6441a5;
         
       }
     }
-    
+    .carousel-inner{
+      border-radius: 25px;
+    }
     .carousel-control-next-icon,  .carousel-control-prev-icon {
       height: 30px;
       width: 30px;
