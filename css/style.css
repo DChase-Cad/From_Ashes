@@ -1,3 +1,4 @@
+@import url(gallery.css);
 /* font-family: 'Roboto Condensed', sans-serif; */
 * {
   box-sizing: border-box;
@@ -36,7 +37,7 @@ header {
 .brdr-bottom {
   border-bottom: 1px solid #6441a5; }
 
-.jumbotron h1 {
+h1 {
   color: #966ae9; }
 
 .jumbotron h2 {
@@ -66,9 +67,8 @@ header {
   left: 0;
   top: 0; }
 
-.carousel-item img {
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px; }
+.carousel-inner {
+  border-radius: 25px; }
 
 .placeholder {
   margin: auto;
@@ -81,9 +81,7 @@ header {
   text-indent: 2rem; }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px; }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .carousel-indicators li {
   height: 1rem;
@@ -123,6 +121,19 @@ footer h5 {
   font-weight: bold;
   font-size: 1.5em; }
 
-@media (max-width: 575.98px) {
-  .carousel-item img {
-    border-radius: 25px; } }
+#gallery img {
+  height: 75vw;
+  object-fit: cover; }
+  @media (min-width: 576px) {
+    #gallery img {
+      height: 35vw; } }
+  @media (min-width: 992px) {
+    #gallery img {
+      height: 15vw; } }
+
+.carousel-item img {
+  height: 50vw;
+  object-fit: contain; }
+  @media (min-width: 992px) {
+    .carousel-item img {
+      height: 550px; } }

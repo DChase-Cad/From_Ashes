@@ -1,3 +1,8 @@
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+@import 'gallery.css';
 /* font-family: 'Roboto Condensed', sans-serif; */
 *{
     box-sizing: border-box;
@@ -45,10 +50,10 @@ header{
     border-bottom:1px solid #6441a5;
 
 }
+h1{
+color:#966ae9;
+}
 .jumbotron {
-    h1{
-    color:#966ae9;
-    }
     h2{
         color:whitesmoke;
 
@@ -85,9 +90,8 @@ header{
     top: 0;
 }
 
-.carousel-item img{
-    border-top-right-radius:25px;
-    border-top-left-radius:25px;
+.carousel-inner{
+    border-radius:25px;
 }
 
 .placeholder{
@@ -102,8 +106,7 @@ header{
 }
 .carousel-caption{
     background-color: rgba(0,0,0,0.5);
-    border-bottom-left-radius:25px;
-    border-bottom-right-radius:25px;
+   
     
 }
 
@@ -153,10 +156,38 @@ footer h5{
     font-size:1.5em;
 }
 
-@media (max-width: 575.98px) {
 
-    .carousel-item img{
-    border-radius:25px;
+// Crop thumbnail images.
+#gallery {
+  
+  img {
+    height: 75vw;
+    object-fit: cover;
+    
+    
+    @media (min-width: $bootstrap-sm) {
+      height: 35vw;
     }
-
+    
+    @media (min-width: $bootstrap-lg) {
+      height: 15vw;
+    }
+  }
 }
+
+
+// Crop images in lightbox.
+.carousel-item {
+  
+  img {
+    height: 50vw;
+    object-fit: contain;
+    
+    @media (min-width: $bootstrap-lg) {
+      height: 550px;
+      
+    }
+  }
+}
+
+

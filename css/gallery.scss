@@ -1,0 +1,203 @@
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
+$purple:#6441a5;
+
+* {
+    transition: 0.3s;
+  }
+  
+  #gallery.custom {
+    padding: 0 15px;
+    
+    img {
+      display: block;
+      margin: 15px 0;
+      border-radius: 25px;
+    }
+    *:hover{
+      cursor: pointer;
+    }
+  }
+  
+  #galleryModal.custom {
+    .modal-content {
+      background: none;
+      border: none;
+      width:80%;
+      
+    }
+    
+    .modal-header {
+      border:none;
+      margin:0;
+      padding:0;
+      
+      
+      button {
+        background: $purple;
+        border-radius: 100px 100px 0 0;
+        padding: 5px 10px;
+        opacity: 1;
+        position: relative;
+        top: 15px;
+        border: solid 2px $purple;
+        
+        @media (min-width: $bootstrap-lg) {
+          top: 5px;
+          right:15px;
+        }
+        
+        &:hover {
+          top: -10px;
+        }
+      }
+      
+      span {
+        color: white;
+        right:-20px;
+      }
+    }
+    
+    .modal-body {
+      padding: 0;
+      border: none;
+      position: relative;
+      
+      &::before, &::after {
+        content: '';
+        height: 50px;
+        width: 50px;
+        display: block;
+        position: absolute;
+        background: #6441a5;
+        border-radius: 3px 10px;
+        
+        @media (min-width: $bootstrap-md) {
+          border-radius: 3px 30px;
+          height: 100px;
+          width: 100px;
+        }
+      }
+      
+      &::before {
+        top: -5px;
+        left: -5px;
+        
+        @media (min-width: $bootstrap-md) {
+          top: -5px;
+          left: -5px;
+        }
+      }
+      
+      &::after {
+        bottom: -5px;
+        right: -15px;
+        z-index: -1;
+        
+        @media (min-width: $bootstrap-md) {
+          bottom: -5px;
+          right: -5px;
+        }
+      }
+    }
+    
+    .modal-footer {
+      border: none;
+      
+      
+      @media (min-width: $bootstrap-lg) {
+        margin-top: 40px;
+      }
+      
+      .btn {
+        margin: auto;
+        border: solid 2px white;
+        background: none;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        padding: 0.2em 0.7em;
+        
+        &:hover {
+          background: white;
+          color: black;
+        }
+      }
+    }
+    
+    .carousel-control-prev, .carousel-control-next {
+      font-size: 2em;
+      top: auto;
+      opacity: 1;
+      bottom: -52px;
+      overflow:hidden;
+      background:rgb(23,23,23);
+      
+      @media (min-width: $bootstrap-md) {
+        top: 0;
+        opacity: 0.7;
+        bottom: 0;
+        width:2rem;
+        
+      }
+    }
+    
+    .carousel-control-next-icon,  .carousel-control-prev-icon {
+      height: 30px;
+      width: 30px;
+    }
+    
+    .carousel-control-prev {
+      @media (min-width: $bootstrap-md) {
+        border-bottom-left-radius:25px;
+        border-top-left-radius:25px;
+       
+      }
+    }
+    
+    .carousel-control-next {
+      @media (min-width: $bootstrap-md) {
+      border-bottom-right-radius:25px;
+      border-top-right-radius:25px;
+        
+      }
+    }
+    
+    .carousel-indicators {
+      bottom: -60px;
+      
+      @media (min-width: $bootstrap-lg) {
+        bottom: -30px;
+      }
+      
+      li {
+        height: 30px;
+        border-radius: 100px;
+        background: none;
+        border: solid 2px white;
+        
+        @media (min-width: $bootstrap-lg) {
+          height: 10px;
+        }
+        
+        &:hover {
+          background: white;
+        }
+        
+        &.active {
+          background: white;
+        }
+      }
+    }
+  }
+  
+  // --- END: custom styling demo --- //
+  
+  
+  // --- BEGIN: style switch --- //
+  // This is just styling for the style toggle switch. Mostly copied from https://www.w3schools.com/howto/howto_css_switch.asp
+  
+  
