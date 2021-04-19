@@ -42,7 +42,8 @@ $purple:#6441a5;
         padding: 5px 10px;
         opacity: 1;
         position: relative;
-        top: 15px;
+        top: 11px;
+        right:20px;
         border: solid 2px $purple;
         
         @media (min-width: $bootstrap-lg) {
@@ -51,6 +52,19 @@ $purple:#6441a5;
           height:50px;
         //   overflow:hidden;
         }
+        @media (min-width: $bootstrap-lg) {
+          top: 15px;
+          right:16px;
+          height:50px;
+        //   overflow:hidden;
+        }
+        @media (min-width: $bootstrap-lg) {
+          top: 15px;
+          right:16px;
+          height:50px;
+        //   overflow:hidden;
+        }
+        
         
         &:hover {
           top: 5px;
@@ -134,10 +148,9 @@ $purple:#6441a5;
     }
     
     .carousel-control-prev, .carousel-control-next {
-      font-size: 2em;
-      top: auto;
-      opacity: 1;
-      bottom: -52px;
+      font-size: 1em;
+      top: 0;
+      opacity:.7;
       overflow:hidden;
       background:rgb(23,23,23);
       
@@ -157,16 +170,14 @@ $purple:#6441a5;
       width: 30px;
     }
     
-    .carousel-control-prev {
-      @media (min-width: $bootstrap-md) {
+    .carousel-control-prev { {
         border-bottom-left-radius:25px;
         border-top-left-radius:25px;
        
       }
     }
     
-    .carousel-control-next {
-      @media (min-width: $bootstrap-md) {
+    .carousel-control-next { {
       border-bottom-right-radius:25px;
       border-top-right-radius:25px;
         
@@ -315,7 +326,7 @@ color:#966ae9;
     
 }
 
-.carousel-indicators li{
+#homeCarousel .carousel-indicators li{
     height: 1rem;
     width:1rem;
     border-radius:100%;
@@ -382,7 +393,7 @@ footer h5{
 
 
 // Crop images in lightbox.
-.carousel-item {
+#galleryCarousel .carousel-item {
   
   img {
     height: 50vw;

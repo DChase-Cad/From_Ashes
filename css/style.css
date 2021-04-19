@@ -25,8 +25,19 @@
     padding: 5px 10px;
     opacity: 1;
     position: relative;
-    top: 15px;
+    top: 11px;
+    right: 20px;
     border: solid 2px #6441a5; }
+    @media (min-width: 992px) {
+      #galleryModal.custom .modal-header button {
+        top: 15px;
+        right: 16px;
+        height: 50px; } }
+    @media (min-width: 992px) {
+      #galleryModal.custom .modal-header button {
+        top: 15px;
+        right: 16px;
+        height: 50px; } }
     @media (min-width: 992px) {
       #galleryModal.custom .modal-header button {
         top: 15px;
@@ -91,10 +102,9 @@
       color: black; }
 
 #galleryModal.custom .carousel-control-prev, #galleryModal.custom .carousel-control-next {
-  font-size: 2em;
-  top: auto;
-  opacity: 1;
-  bottom: -52px;
+  font-size: 1em;
+  top: 0;
+  opacity: .7;
   overflow: hidden;
   background: #171717; }
   @media (min-width: 768px) {
@@ -223,7 +233,7 @@ h1 {
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); }
 
-.carousel-indicators li {
+#homeCarousel .carousel-indicators li {
   height: 1rem;
   width: 1rem;
   border-radius: 100%; }
@@ -271,9 +281,9 @@ footer h5 {
     #gallery img {
       height: 15vw; } }
 
-.carousel-item img {
+#galleryCarousel .carousel-item img {
   height: 50vw;
   object-fit: contain; }
   @media (min-width: 992px) {
-    .carousel-item img {
+    #galleryCarousel .carousel-item img {
       height: 550px; } }
