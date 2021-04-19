@@ -29,13 +29,15 @@
     border: solid 2px #6441a5; }
     @media (min-width: 992px) {
       #galleryModal.custom .modal-header button {
-        top: 5px;
-        right: 15px; } }
+        top: 15px;
+        right: 16px;
+        height: 50px; } }
     #galleryModal.custom .modal-header button:hover {
-      top: -10px; }
+      top: 5px; }
   #galleryModal.custom .modal-header span {
     color: white;
-    right: -20px; }
+    position: relative;
+    top: -12px; }
 
 #galleryModal.custom .modal-body {
   padding: 0;

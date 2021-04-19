@@ -2,11 +2,6 @@ $bootstrap-sm: 576px;
 $bootstrap-md: 768px;
 $bootstrap-lg: 992px;
 $bootstrap-xl: 1200px;
-
-$bootstrap-sm: 576px;
-$bootstrap-md: 768px;
-$bootstrap-lg: 992px;
-$bootstrap-xl: 1200px;
 $purple:#6441a5;
 
 * {
@@ -51,18 +46,22 @@ $purple:#6441a5;
         border: solid 2px $purple;
         
         @media (min-width: $bootstrap-lg) {
-          top: 5px;
-          right:15px;
+          top: 15px;
+          right:16px;
+          height:50px;
+        //   overflow:hidden;
         }
         
         &:hover {
-          top: -10px;
+          top: 5px;
         }
       }
       
       span {
         color: white;
-        right:-20px;
+        position:relative;
+        top: -12px;
+    
       }
     }
     
