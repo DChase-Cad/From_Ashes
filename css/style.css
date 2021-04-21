@@ -20,14 +20,14 @@
   margin: 0;
   padding: 0; }
   #galleryModal.custom .modal-header button {
-    background: #6441a5;
+    background: #966ae9;
     border-radius: 100px 100px 0 0;
     padding: 5px 10px;
     opacity: 1;
     position: relative;
     top: 11px;
     right: 20px;
-    border: solid 2px #6441a5; }
+    border: solid 2px #966ae9; }
     @media (min-width: 992px) {
       #galleryModal.custom .modal-header button {
         top: 15px;
@@ -46,7 +46,7 @@
     #galleryModal.custom .modal-header button:hover {
       top: 5px; }
   #galleryModal.custom .modal-header span {
-    color: white;
+    color: whitesmoke;
     position: relative;
     top: -12px; }
 
@@ -60,7 +60,7 @@
     width: 50px;
     display: block;
     position: absolute;
-    background: #6441a5;
+    background: #966ae9;
     border-radius: 3px 10px; }
     @media (min-width: 768px) {
       #galleryModal.custom .modal-body::before, #galleryModal.custom .modal-body::after {
@@ -90,7 +90,7 @@
       margin-top: 40px; } }
   #galleryModal.custom .modal-footer .btn {
     margin: auto;
-    border: solid 2px white;
+    border: solid 2px whitesmoke;
     background: none;
     text-transform: uppercase;
     font-size: 0.8em;
@@ -98,11 +98,12 @@
     font-weight: bold;
     padding: 0.2em 0.7em; }
     #galleryModal.custom .modal-footer .btn:hover {
-      background: white;
+      background: whitesmoke;
       color: black; }
 
 #galleryModal.custom .carousel-control-prev, #galleryModal.custom .carousel-control-next {
   font-size: 1em;
+  width: 2rem;
   top: 0;
   opacity: .7;
   overflow: hidden;
@@ -121,15 +122,13 @@
   height: 30px;
   width: 30px; }
 
-@media (min-width: 768px) {
-  #galleryModal.custom .carousel-control-prev {
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px; } }
+#galleryModal.custom .carousel-control-prev {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px; }
 
-@media (min-width: 768px) {
-  #galleryModal.custom .carousel-control-next {
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px; } }
+#galleryModal.custom .carousel-control-next {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px; }
 
 #galleryModal.custom .carousel-indicators {
   bottom: -60px; }
@@ -140,14 +139,14 @@
     height: 30px;
     border-radius: 100px;
     background: none;
-    border: solid 2px white; }
+    border: solid 2px whitesmoke; }
     @media (min-width: 992px) {
       #galleryModal.custom .carousel-indicators li {
         height: 10px; } }
     #galleryModal.custom .carousel-indicators li:hover {
-      background: white; }
+      background: whitesmoke; }
     #galleryModal.custom .carousel-indicators li.active {
-      background: white; }
+      background: whitesmoke; }
 
 /* font-family: 'Roboto Condensed', sans-serif; */
 * {
@@ -185,7 +184,7 @@ header {
   color: #966ae9; }
 
 .brdr-bottom {
-  border-bottom: 1px solid #6441a5; }
+  border-bottom: 1px solid #966ae9; }
 
 h1 {
   color: #966ae9; }
@@ -224,7 +223,7 @@ h1 {
   margin: auto;
   width: 100%;
   height: 20vh;
-  background-color: #171717; }
+  background-color: #2e2e2e; }
 
 .para {
   font-size: 1.2rem;
@@ -247,20 +246,20 @@ footer h5 {
   color: #966ae9; }
 
 footer .fa-envelope {
-  color: white; }
+  color: whitesmoke; }
 
 footer li a {
   color: whitesmoke; }
 
 .twitch {
-  color: #6441a5; }
+  color: #966ae9; }
 
 .twitch:hover {
   color: whitesmoke;
-  background-color: #6441a5; }
+  background-color: #966ae9; }
 
 footer li a:hover {
-  background-color: #6441a5;
+  background-color: #966ae9;
   color: whitesmoke;
   text-decoration: none; }
 
@@ -287,3 +286,35 @@ footer h5 {
   @media (min-width: 992px) {
     #galleryCarousel .carousel-item img {
       height: 550px; } }
+
+.ac-link {
+  color: whitesmoke; }
+  .ac-link small {
+    color: #171717; }
+  .ac-link:hover {
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px gray;
+    cursor: pointer; }
+
+#accordion a[aria-expanded=true] .fa-chevron-down {
+  display: none; }
+
+#accordion a[aria-expanded=false] .fa-chevron-up {
+  display: none; }
+
+#accordion .card {
+  margin-bottom: .2rem; }
+  #accordion .card p {
+    color: whitesmoke; }
+  #accordion .card img {
+    border-radius: 25px;
+    width: 100%; }
+  #accordion .card ul {
+    margin-left: 3rem; }
+
+#accordion .card-header {
+  background: #966ae9; }
+
+.officer {
+  color: whitesmoke; }

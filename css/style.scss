@@ -2,7 +2,11 @@ $bootstrap-sm: 576px;
 $bootstrap-md: 768px;
 $bootstrap-lg: 992px;
 $bootstrap-xl: 1200px;
-$purple:#6441a5;
+$purple:#966ae9;
+$light:whitesmoke;
+$primary:black;
+$secondary:rgb(23,23,23);
+$lighter:rgb(46,46,46);
 
 * {
     transition: 0.3s;
@@ -72,7 +76,7 @@ $purple:#6441a5;
       }
       
       span {
-        color: white;
+        color: $light;
         position:relative;
         top: -12px;
     
@@ -90,7 +94,7 @@ $purple:#6441a5;
         width: 50px;
         display: block;
         position: absolute;
-        background: #6441a5;
+        background: $purple;
         border-radius: 3px 10px;
         
         @media (min-width: $bootstrap-md) {
@@ -132,7 +136,7 @@ $purple:#6441a5;
       
       .btn {
         margin: auto;
-        border: solid 2px white;
+        border: solid 2px $light;
         background: none;
         text-transform: uppercase;
         font-size: 0.8em;
@@ -141,8 +145,8 @@ $purple:#6441a5;
         padding: 0.2em 0.7em;
         
         &:hover {
-          background: white;
-          color: black;
+          background: $light;
+          color: $primary;
         }
       }
     }
@@ -153,7 +157,7 @@ $purple:#6441a5;
       top: 0;
       opacity:.7;
       overflow:hidden;
-      background:rgb(23,23,23);
+      background:$secondary;
       
       @media (min-width: $bootstrap-md) {
         top: 0;
@@ -171,19 +175,19 @@ $purple:#6441a5;
       width: 30px;
     }
     
-    .carousel-control-prev { {
+    .carousel-control-prev  {
         border-bottom-left-radius:25px;
         border-top-left-radius:25px;
        
       }
-    }
     
-    .carousel-control-next { {
+    
+    .carousel-control-next { 
       border-bottom-right-radius:25px;
       border-top-right-radius:25px;
         
       }
-    }
+    
     
     .carousel-indicators {
       bottom: -60px;
@@ -196,18 +200,18 @@ $purple:#6441a5;
         height: 30px;
         border-radius: 100px;
         background: none;
-        border: solid 2px white;
+        border: solid 2px $light;
         
         @media (min-width: $bootstrap-lg) {
           height: 10px;
         }
         
         &:hover {
-          background: white;
+          background: $light;
         }
         
         &.active {
-          background: white;
+          background: $light;
         }
       }
     }
@@ -229,7 +233,7 @@ $purple:#6441a5;
 body{
     font-family:'Roboto Condensed',sans-serif;
     width:100%;
-    background-color: rgb(46, 46, 46);
+    background-color: $lighter;
 }
 
 /* header section */
@@ -244,7 +248,7 @@ header{
 }
 
 .container .row-content{
-    background-color:rgb(23, 23, 23);
+    background-color:$secondary;
 }
 
 .smaller{
@@ -253,39 +257,40 @@ header{
 .jumbotron{
     margin:0;
     padding:0;
-    background-color: black;
+    background-color: $primary;
     font-weight:700;
     padding-top:7vh;
 }
 
 
 .row-content h2{
-    color:#966ae9;
+    color:$purple;
 }
 
 .brdr-bottom{
-    border-bottom:1px solid #6441a5;
+    border-bottom:1px solid $purple;
 
 }
 h1{
-color:#966ae9;
+color:$purple;
+
 }
 .jumbotron {
     h2{
-        color:whitesmoke;
+        color:$light;
 
     } 
 }
 
 .navbar{
-    background: black;
+    background: $primary;
     margin:0;
     padding:0;
 
 }
 
 .navbar .navbar-nav li a:hover{
-    color: #966ae9!important;}
+    color: $purple!important;}
 .navbar{
     width:100%;
 }
@@ -298,7 +303,7 @@ color:#966ae9;
 }
 
 .row-content{
-    background:rgb(46, 46, 46);
+    background:$lighter;
 }
 
 .carousel-caption {
@@ -315,7 +320,7 @@ color:#966ae9;
     margin:auto;
     width:100%;
     height:20vh;
-    background-color:rgb(23, 23, 23);
+    background-color:$lighter;
 }
 .para{
     font-size:1.2rem;
@@ -336,36 +341,36 @@ color:#966ae9;
 
 /* footer */
 footer{
-    background-color: black;
+    background-color: $primary;
 }
 
 footer h5{
-    color:#966ae9;
+    color:$purple;
 }
 
 footer .fa-envelope{
-    color:white;
+    color:$light;
 }
 
 footer li a{
-    color:whitesmoke;
+    color:$light;
 }
 .twitch{
     
-    color:#6441a5;
+    color:$purple;
 }
 .twitch:hover{
-    color:whitesmoke;
-    background-color:#6441a5;
+    color:$light;
+    background-color:$purple;
 }
 footer li a:hover{
-    background-color:#6441a5;
-    color:whitesmoke;
+    background-color:$purple;
+    color:$light;
     text-decoration: none;
 }
 
 .fa-envelope:hover{
-    color:#966ae9;
+    color:$purple;
 }
 
 footer h5{
@@ -407,4 +412,53 @@ footer h5{
   }
 }
 
+.ac-link{
+  color:$light;
+  small{
+    color:$secondary;
+  }
+  &:hover{
+    text-decoration:none;
+    color:$light;
+    text-shadow:1px 1px 1px gray;
+    cursor: pointer;
+  }
+  
+}
 
+#accordion{
+  
+  a[aria-expanded=true] .fa-chevron-down {
+      display: none;
+  }
+  a[aria-expanded=false] .fa-chevron-up {
+      display: none;
+  }
+  
+  .card{
+    margin-bottom:.2rem;
+    
+    p{
+      color:$light;
+      
+    }
+    img{
+      border-radius:25px;
+      width:100%;
+  
+    }
+    ul{
+      margin-left:3rem;
+    }
+  }
+
+
+  .card-header{
+    background:$purple;
+  }
+}
+
+.officer{
+  color:$light;
+  
+}
