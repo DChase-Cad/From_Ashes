@@ -3,6 +3,7 @@ $bootstrap-md: 768px;
 $bootstrap-lg: 992px;
 $bootstrap-xl: 1200px;
 $purple:#966ae9;
+$darkPurple:#7538dd;
 $light:whitesmoke;
 $primary:black;
 $secondary:rgb(23,23,23);
@@ -437,6 +438,17 @@ footer h5{
   
   .card{
     margin-bottom:.2rem;
+    background:$darkPurple;
+  h4 {
+    a{
+    text-shadow:1px 2px 1px $darkPurple;
+    small{
+      text-shadow:none;
+    }
+    }
+  }
+
+    
     
     p{
       color:$light;
