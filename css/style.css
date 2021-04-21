@@ -318,12 +318,15 @@ footer h5 {
     width: 100%; }
   #accordion .card ul {
     margin-left: 3rem; }
+    #accordion .card ul li {
+      list-style: none; }
 
 #accordion .card-header {
   background: #966ae9; }
 
 .officer {
-  color: whitesmoke; }
+  color: whitesmoke;
+  text-shadow: 1px 1px 3px #171717; }
 
 #rip {
   text-decoration: none;
