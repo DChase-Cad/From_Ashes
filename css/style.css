@@ -318,3 +318,9 @@ footer h5 {
 
 .officer {
   color: whitesmoke; }
+
+#rip {
+  text-decoration: none;
+  color: whitesmoke; }
+  #rip:hover {
+    cursor: text; }

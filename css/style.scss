@@ -462,3 +462,11 @@ footer h5{
   color:$light;
   
 }
+
+#rip{
+  text-decoration:none;
+  color:$light;
+  &:hover{
+    cursor:text;
+  }
+}
