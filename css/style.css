@@ -311,7 +311,8 @@ footer h5 {
     #accordion .card h4 a small {
       text-shadow: none; }
   #accordion .card p {
-    color: whitesmoke; }
+    color: whitesmoke;
+    text-shadow: 1px 1px 3px #171717; }
   #accordion .card img {
     border-radius: 25px;
     width: 100%; }
