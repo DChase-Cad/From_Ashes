@@ -8,6 +8,20 @@ $light:whitesmoke;
 $primary:black;
 $secondary:rgb(23,23,23);
 $lighter:rgb(46,46,46);
+$mainFont:'Roboto Condensed', sans-serif;
+$foot-height:11rem;
+$dk:#c41e3a;
+$dh:#a330c9;
+$druid:#ff7c0a;
+$hunt:#aad372;
+$mage:#3fc7eb;
+$monk:#00ff98;
+$pally:#f48cba;
+$priest:#ffffff;
+$rogue:#fff468;
+$sham:#0070dd;
+$lock:#8788ee;
+$war:#c69b6d;
 
 * {
     transition: 0.3s;
@@ -31,7 +45,7 @@ $lighter:rgb(46,46,46);
     .modal-content {
       background: none;
       border: none;
-      width:80%;
+      width:95%;
       
     }
     
@@ -232,7 +246,7 @@ $lighter:rgb(46,46,46);
     padding:0;
 }
 body{
-    font-family:'Roboto Condensed',sans-serif;
+    font-family:$mainFont;
     width:100%;
     background-color: $lighter;
 }
@@ -304,9 +318,12 @@ color:$purple;
 }
 
 .row-content{
-    background:$lighter;
+    background:$primary;
 }
 
+#about{
+  background:$secondary;
+}
 .carousel-caption {
     position: relative;
     left: 0;
@@ -485,5 +502,89 @@ footer h5{
   color:$light;
   &:hover{
     cursor:text;
+  }
+}
+
+.pagecon{
+  position:relative;
+  min-height:100vh;
+}
+
+.foot-bot{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:$foot-height;
+}
+
+#content{
+  padding-bottom:$foot-height;
+}
+
+.txt-shdw{
+  text-shadow:1px 1px 1px $lighter;
+}
+
+.druid{
+    background-color:orange;
+}
+
+.dk{
+  background-color:$dk;
+}
+
+.dh{
+  background-color:$dh;
+}
+
+.hunter{
+  background:$hunt;
+}
+
+.mage{
+  background-color: $mage;
+}
+
+.monk{
+  background-color: $monk;
+}
+
+.pally{
+  background-color: $pally;
+}
+
+.priest{
+  background-color:$priest;
+}
+
+.rogue{
+  background-color: $rogue;
+}
+
+.sham{
+  background-color: $sham;
+}
+
+.lock{
+  background-color: $lock;
+}
+
+.war{
+  background-color: $war;
+}
+
+#guides{
+  .card{
+    background:$lighter;
+    min-height:195px;
+  }
+
+  .card-header{
+    padding:0;
+  }
+
+  ul{
+    list-style: none;
+    color:$light;
   }
 }
